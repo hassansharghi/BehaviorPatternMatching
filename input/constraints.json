@@ -1,0 +1,131 @@
+[
+  {
+	"name": "Pattern Example-2",
+	"length": "3",
+	"bound_variable": [ 
+		{"var1":"role" },
+		{"var2":"action" },
+		{"var3":"resource" },
+		{"var4":"location" },
+		{"var5":"date" }		
+	 ],
+
+	"constraint": [
+	{   "type": "unary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event1",
+		"attr": "role",
+		"value": "R-1",
+		"operator": "=="
+	},
+	{   "type": "unary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event1",
+		"attr": "action",
+		"value": "A-10",
+		"operator": "=="
+	},
+	{   "type": "unary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event1",
+		"attr": "resource",
+		"value": "S-1",
+		"operator": "=="
+	},
+	{   "type": "unary",
+		"weight": "1", 
+		"effect": "soft",
+		"operand1": "event1",
+		"attr": "location",
+		"value": "L-16",
+		"operator": "=="
+	},
+	{   "type": "unary",
+		"weight": "1", 
+		"effect": "soft",
+		"operand1": "event2",
+		"attr": "location",
+		"value": "L-17",
+		"operator": "=="
+	},
+	{   "type": "unary",
+		"weight": "1", 
+		"effect": "soft",
+		"operand1": "event3",
+		"attr": "location",
+		"value": "L-20",
+		"operator": "=="
+	},
+	
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event1",
+		"operand2": "event2",
+		"attr": "role",
+		"operator": "=="
+	},
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event2",
+		"operand2": "event3",
+		"attr": "role",
+		"operator": "=="
+	},
+	
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event1",
+		"operand2": "event2",
+		"attr": "action",
+		"operator": "=="
+	},
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event2",
+		"operand2": "event3",
+		"attr": "action",
+		"operator": "=="
+	},
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event1",
+		"operand2": "event2",
+		"attr": "resource",
+		"operator": "=="
+	},
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event2",
+		"operand2": "event3",
+		"attr": "resource",
+		"operator": "=="
+	},
+	
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event1",
+		"operand2": "event2",
+		"attr": "date",
+		"operator": "=="
+	},
+	{	"type": "binary",
+		"weight": "1", 
+		"effect": "hard",
+		"operand1": "event2",
+		"operand2": "event3",
+		"attr": "date",
+		"operator": "=="
+	}
+	]               
+ }  
+]

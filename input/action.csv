@@ -1,0 +1,18 @@
+create order,A-1
+create report,A-2
+create profile,A-3
+create exam,A-4
+update profile,A-5
+update order,A-6
+update exam,A-7
+update report,A-8
+read exam,A-9
+read report,A-10
+read order,A-11
+read profile,A-12
+delete order,A-13
+delete exam,A-14
+delete report,A-15
+delete profile,A-16
+write report, A-17
+measure vital-signs, A-18
